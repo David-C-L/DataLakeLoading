@@ -15,7 +15,7 @@ inline std::string VELOX_PATH =
     "/enter/path/to/BOSSVeloxEngine/build/"
     "libBOSSVeloxEngine.so";
 inline std::string CE_PATH =
-    "/enter/path/to/BOSSVeloxEngine/build/"
+    "/enter/path/to/BOSSConditionalEvaluationEngine/build/"
     "libBOSSConditionalEvaluationEngine.so";
 
 inline std::string coordinator =
