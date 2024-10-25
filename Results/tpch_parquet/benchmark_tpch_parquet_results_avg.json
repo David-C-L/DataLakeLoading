@@ -1,0 +1,100 @@
+{
+  "queries" : [
+    {
+      "1" : {
+        "parquet_avg_milliseconds" : 27108,
+        "wisent_avg_milliseconds" : 15429,
+        "parquet_bytes" : 276234671,
+        "wisent_bytes" : 144520553
+      },
+      "10" : {
+        "parquet_avg_milliseconds" : 359628,
+        "wisent_avg_milliseconds" : 468581,
+        "parquet_bytes" : 2761299511,
+        "wisent_bytes" : 3483487831
+      },
+      "20" : {
+        "parquet_avg_milliseconds" : 730246,
+        "wisent_avg_milliseconds" : 1102345,
+        "parquet_bytes" : 5412324587,
+        "wisent_bytes" : 6858936401
+      }
+    },{
+      "1" : {
+        "parquet_avg_milliseconds" : 108141,
+        "wisent_avg_milliseconds" : 35485,
+        "parquet_bytes" : 1059939043,
+        "wisent_bytes" : 220518635
+      },
+      "10" : {
+        "parquet_avg_milliseconds" : 1588572,
+        "wisent_avg_milliseconds" : 270365,
+        "parquet_bytes" : 10595731228,
+        "wisent_bytes" : 2108197776
+      },
+      "20" : {
+        "parquet_avg_milliseconds" : 3472555,
+        "wisent_avg_milliseconds" : 534717,
+        "parquet_bytes" : 21193515916,
+        "wisent_bytes" : 3836329080
+      }
+    },{
+      "1" : {
+        "parquet_avg_milliseconds" : 18223,
+        "wisent_avg_milliseconds" : 15429,
+        "parquet_bytes" : 168240433,
+        "wisent_bytes" : 144520553
+      },
+      "10" : {
+        "parquet_avg_milliseconds" : 187132,
+        "wisent_avg_milliseconds" : 157433,
+        "parquet_bytes" : 1681591186,
+        "wisent_bytes" : 1327475585
+      },
+      "20" : {
+        "parquet_avg_milliseconds" : 372084,
+        "wisent_avg_milliseconds" : 329095,
+        "parquet_bytes" : 3364051846,
+        "wisent_bytes" : 2609138699
+      }
+    },{
+      "1" : {
+        "parquet_avg_milliseconds" : 121515,
+        "wisent_avg_milliseconds" : 33801,
+        "parquet_bytes" : 1190631855,
+        "wisent_bytes" : 286629049
+      },
+      "10" : {
+        "parquet_avg_milliseconds" : 437245,
+        "wisent_avg_milliseconds" : 321004,
+        "parquet_bytes" : 3289051813,
+        "wisent_bytes" : 2910778987
+      },
+      "20" : {
+        "parquet_avg_milliseconds" : 1315823,
+        "wisent_avg_milliseconds" : 592715,
+        "parquet_bytes" : 6579181666,
+        "wisent_bytes" : 5541107491
+      }
+    },{
+      "1" : {
+        "parquet_avg_milliseconds" : 15454,
+        "wisent_avg_milliseconds" : 15290,
+        "parquet_bytes" : 142233563,
+        "wisent_bytes" : 145222474
+      },
+      "10" : {
+        "parquet_avg_milliseconds" : 159348,
+        "wisent_avg_milliseconds" : 165859,
+        "parquet_bytes" : 1422304671,
+        "wisent_bytes" : 1451779287
+      },
+      "20" : {
+        "parquet_avg_milliseconds" : 325863,
+        "wisent_avg_milliseconds" : 320047,
+        "parquet_bytes" : 2844648638,
+        "wisent_bytes" : 2823625194
+      }
+    }
+  ]
+}
