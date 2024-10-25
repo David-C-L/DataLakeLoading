@@ -1,0 +1,34 @@
+* DADSVeloxEngine
+This engine tests successfully on x86_64 Linux (Ubuntu 22.04)
+
+*** Dependencies
+: sudo apt install libthrift-dev uuid-dev
+
+*** Get the Velox Source
+: git clone --recursive https://github.com/facebookincubator/velox.git
+: cd velox
+: git reset --hard fb33fbfec5895
+: git submodule sync --recursive
+: git submodule update --init --recursive
+: sudo ./scripts/setup-ubuntu.sh
+: cd ..
+: export VELOX_DIRS=...
+
+*** Build DADSVeloxEngine
+: git clone https://github.com/symbol-store/DADSVeloxEngine.git -b parallel_support
+: cd DADSVeloxEngine
+: cp Modified-velox-src/CMakeLists.txt ${VELOX_DIRS}/third_party/
+: cp Modified-velox-src/ArithmeticFunctionsRegistration.cpp ${VELOX_DIRS}/velox/functions/prestosql/registration/
+: cp Modified-velox-src/Arithmetic.h ${VELOX_DIRS}/velox/functions/prestosql/
+: cp Modified-velox-src/ArithmeticImpl.h ${VELOX_DIRS}/velox/functions/prestosql/
+: cp Modified-velox-src/PlanBuilder.cpp ${VELOX_DIRS}/velox/exec/tests/utils/
+
+: mkdir build
+: cd build
+: cmake -DGITHUB_TOKEN=... -DVELOX_DIRS=${VELOX_DIRS} -DCMAKE_C_COMPILER=/usr/bin/clang -DCMAKE_CXX_COMPILER=/usr/bin/clang++ -DCMAKE_BUILD_TYPE=Release ..
+: cmake --build . -j8
+
+*** SQL Test
+: cp ../Tests/DADSTests.cpp ./DADS-prefix/src/DADS/Tests/
+: cmake --build . -j8
+: ./deps/bin/Tests --library ./libDADSVeloxEngine.so
